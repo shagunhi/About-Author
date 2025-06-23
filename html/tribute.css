@@ -1,0 +1,48 @@
+h1{
+    width: 100%;
+    height:50px;
+    background-color: #B9C2DF;
+    text-align: center;
+
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding: 0em;
+}
+h2{
+    text-align: center;
+    padding: 0%;
+}
+h4 {
+  text-align: center;
+  color: #594E36; /* light gray - you can adjust this */
+  font-style: italic; /* optional: reinforces <i> style */
+  margin: 10px 0;
+}
+p{
+  text-align:right;
+}
+body{
+    background-color: #9DAAD2;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#works{
+  display:grid;
+  place-items:center;
+  height: 30vh;
+
+}
+
+/*.playwrite-au-sa-h1 {
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+    */
