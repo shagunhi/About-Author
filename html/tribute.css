@@ -1,27 +1,77 @@
-h1{
-    width: 100%;
-    height:50px;
-    background-color: #B9C2DF;
-    text-align: center;
-
-  justify-content: space-between;
+h1 {
+  width: 100%;
+  height: 50px;
+  background-color: #B9C2DF;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
   align-items: center;
   top: 0;
   padding: 0em;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+  margin: 20px auto; 
+}
+.column {
+  flex: 0 1 200px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
 h2{
     text-align: center;
     padding: 0%;
 }
 h4 {
   text-align: center;
-  color: #594E36; /* light gray - you can adjust this */
+  color: #112A46; /* light gray - you can adjust this */
   font-style: italic; /* optional: reinforces <i> style */
   margin: 10px 0;
 }
-p{
-  text-align:right;
+.bio-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
 }
+
+.bio-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.bio-text {
+  flex: 2 1 500px;
+}
+
+#tribute-info {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white;
+  background-color: #112A46;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-family: 'Georgia', serif;
+}
+
+/* p{
+  text-align:right;
+} */
 body{
     background-color: #9DAAD2;
 }
@@ -32,17 +82,26 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-#works{
-  display:grid;
-  place-items:center;
-  height: 30vh;
-
+figure {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*.playwrite-au-sa-h1 {
-    font-family: "Playwrite AU SA", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
   }
-    */
+}
